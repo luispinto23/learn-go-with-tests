@@ -13,6 +13,10 @@ func Hello(name, language string) string {
 		name = "world"
 	}
 
+	return geetingPrefix(language, name)
+}
+
+func geetingPrefix(language string, name string) string {
 	helloPrefix := englishHelloPrefix
 
 	switch language {
